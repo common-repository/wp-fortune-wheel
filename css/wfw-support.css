@@ -1,0 +1,206 @@
+#WFW-support a {
+    text-decoration: none;
+}
+
+#WFW-support img {
+    max-width: 100%;
+}
+
+/*Admin notice*/
+.WFW-notification-wrapper {
+    border: 1px solid rgba(241, 93, 88, 1);
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.WFW-notification-controls {
+    text-align: right;
+    margin: 10px 0 0;
+}
+
+.WFW-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background: #999999;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.WFW-button.WFW-primary {
+    background-color: rgba(241, 93, 88, 1);
+}
+
+.WFW-button:hover {
+    opacity: 0.9;
+    color: #212121;
+    box-shadow: 0px 0px 5px #666;
+}
+
+.WFW-content .WFW-left {
+    width: 200px;
+    background: rgba(241, 93, 88, 1);
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 31px;
+    line-height: 1.5;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.WFW-content .WFW-right {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 100%;
+}
+
+.WFW-content .WFW-left + .WFW-right {
+    width: calc(100% - 210px);
+}
+
+/*Widget Dashboard*/
+.WFW-dashboard .WFW-content .WFW-left {
+    width: 100%;
+    display: block;
+}
+
+.WFW-dashboard .WFW-content .WFW-right, .WFW-dashboard .WFW-notification-controls {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/*Extensions page*/
+.WFW-extension-content {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 0 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+}
+
+.WFW-extension-content img {
+    max-width: 100%;
+}
+
+.WFW-extension-content h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.WFW-col-4 {
+    width: 31.33%;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    box-shadow: 0 0 8px #CCC;
+    font-weight: 300;
+    position: relative;
+    line-height: 1.5;
+
+}
+
+.WFW-item-image {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+.WFW-item-controls {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.WFW-item-controls:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.WFW-item-controls-inner {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 99%;
+    font-size: 16px;
+}
+
+.WFW-col-4:hover .WFW-item-controls {
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.WFW-item-title, .WFW-item-description, .WFW-item-rating {
+    padding: 10px 20px 0;
+}
+
+.WFW-item-rating {
+    color: #ffcc36;
+}
+
+.WFW-item-description {
+    padding-bottom: 20px;
+}
+
+.WFW-primary-color {
+    color: rgba(241, 93, 88, 1);
+    text-decoration: none;
+}
+
+.WFW-content form a.vi-button-dismiss:before {
+    float: left;
+}
+.WFW-content form a.vi-button-dismiss {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%) !important;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.WFW-content form {
+    position: relative;
+    padding-right: 86px;
+}
+@media screen and (max-width: 480px){
+    .WFW-content form {
+        padding-right: 0 !important;
+    }
+    .WFW-content form a.vi-button-dismiss {
+        position: unset;
+        transform: unset !important;
+    }
+}
